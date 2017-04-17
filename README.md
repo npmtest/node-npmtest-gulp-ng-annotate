@@ -1,7 +1,7 @@
 # test coverage for  [gulp-ng-annotate (v2.0.0)](https://github.com/Kagami/gulp-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-ng-annotate.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-ng-annotate)
 #### Add angularjs dependency injection annotations with ng-annotate
 
-[![NPM](https://nodei.co/npm/gulp-ng-annotate.png?downloads=true)](https://www.npmjs.com/package/gulp-ng-annotate)
+[![NPM](https://nodei.co/npm/gulp-ng-annotate.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-ng-annotate)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-gulp-ng-annotate/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-ng-annotate/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-gulp-ng-annotate%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-ng-annotate/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-ng-annotate%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-ng-annotate/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/test-report.html](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-gulp-ng-annotate/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-ng-annotate/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-ng-annotate/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-ng-annotate/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-gulp-ng-annotate/build/screenCapture.npmPackageListing.svg)
 
@@ -66,13 +72,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "kagami",
-            "email": "kagami@genshiken.org"
+            "name": "kagami"
         }
     ],
     "name": "gulp-ng-annotate",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Kagami/gulp-ng-annotate.git"
