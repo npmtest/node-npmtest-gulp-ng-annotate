@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-gulp-ng-annotate/gulp-ng-annotate/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-gulp-ng-annotate/node_modules/gulp-ng-annotate/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-ng-annotate">npmtest-gulp-ng-annotate (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-ng-annotate/gulp-ng-annotate/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-ng-annotate/node_modules/gulp-ng-annotate/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">19.15% <small>(9 / 47)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-ng-annotate/gulp-ng-annotate/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-ng-annotate/node_modules/gulp-ng-annotate/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -386,79 +384,80 @@ var BufferStreams = require("bufferstreams");
 var PLUGIN_NAME = "gulp-ng-annotate";
 &nbsp;
 // Function which handle logic for both stream and buffer modes.
-<span class="fstat-no" title="function not covered" >function transform(file, input, opts) {</span>
-<span class="cstat-no" title="statement not covered" >  var res = ngAnnotate(input.toString(), opts);</span>
-<span class="cstat-no" title="statement not covered" >  if (res.errors) {</span>
-<span class="cstat-no" title="statement not covered" >    var filename = "";</span>
-<span class="cstat-no" title="statement not covered" >    if (file.path) {</span>
-<span class="cstat-no" title="statement not covered" >      filename = file.relative + ": ";</span>
+<span class="fstat-no" title="function not covered">function transform(file, input, opts) {</span>
+<span class="cstat-no" title="statement not covered">  var res = ngAnnotate(input.toString(), opts);</span>
+<span class="cstat-no" title="statement not covered">  if (res.errors) {</span>
+<span class="cstat-no" title="statement not covered">    var filename = "";</span>
+<span class="cstat-no" title="statement not covered">    if (file.path) {</span>
+<span class="cstat-no" title="statement not covered">      filename = file.relative + ": ";</span>
     }
-<span class="cstat-no" title="statement not covered" >    throw new gutil.PluginError(PLUGIN_NAME, filename + res.errors.join("\n"));</span>
+<span class="cstat-no" title="statement not covered">    throw new gutil.PluginError(PLUGIN_NAME, filename + res.errors.join("\n"));</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (opts.map &amp;&amp; file.sourceMap) {</span>
-<span class="cstat-no" title="statement not covered" >    var sourceMap = JSON.parse(res.map);</span>
-<span class="cstat-no" title="statement not covered" >    sourceMap.file = file.relative;</span>
-<span class="cstat-no" title="statement not covered" >    applySourceMap(file, sourceMap);</span>
+<span class="cstat-no" title="statement not covered">  if (opts.map &amp;&amp; file.sourceMap) {</span>
+<span class="cstat-no" title="statement not covered">    var sourceMap = JSON.parse(res.map);</span>
+<span class="cstat-no" title="statement not covered">    sourceMap.file = file.relative;</span>
+<span class="cstat-no" title="statement not covered">    applySourceMap(file, sourceMap);</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return new Buffer(res.src);</span>
+<span class="cstat-no" title="statement not covered">  return new Buffer(res.src);</span>
 }
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered" >function (options) {</span>
-<span class="cstat-no" title="statement not covered" >  options = options || {};</span>
-<span class="cstat-no" title="statement not covered" >  if (!options.remove) {</span>
-<span class="cstat-no" title="statement not covered" >    options = merge({add: true}, options);</span>
+module.exports = <span class="fstat-no" title="function not covered">function (options) {</span>
+<span class="cstat-no" title="statement not covered">  options = options || {};</span>
+<span class="cstat-no" title="statement not covered">  if (!options.remove) {</span>
+<span class="cstat-no" title="statement not covered">    options = merge({add: true}, options);</span>
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return through.obj(<span class="fstat-no" title="function not covered" >function (file, enc, done) {</span></span>
+<span class="cstat-no" title="statement not covered">  return through.obj(<span class="fstat-no" title="function not covered">function (file, enc, done) {</span></span>
     // When null just pass through.
-<span class="cstat-no" title="statement not covered" >    if (file.isNull()) {</span>
-<span class="cstat-no" title="statement not covered" >      this.push(file);</span>
-<span class="cstat-no" title="statement not covered" >      return done();</span>
+<span class="cstat-no" title="statement not covered">    if (file.isNull()) {</span>
+<span class="cstat-no" title="statement not covered">      this.push(file);</span>
+<span class="cstat-no" title="statement not covered">      return done();</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var opts = merge({map: !!file.sourceMap}, options);</span>
-<span class="cstat-no" title="statement not covered" >    if (opts.map) {</span>
-<span class="cstat-no" title="statement not covered" >      if (typeof opts.map === "boolean") {</span>
-<span class="cstat-no" title="statement not covered" >        opts.map = {};</span>
+<span class="cstat-no" title="statement not covered">    var opts = merge({map: !!file.sourceMap}, options);</span>
+<span class="cstat-no" title="statement not covered">    if (opts.map) {</span>
+<span class="cstat-no" title="statement not covered">      if (typeof opts.map === "boolean") {</span>
+<span class="cstat-no" title="statement not covered">        opts.map = {};</span>
       }
-<span class="cstat-no" title="statement not covered" >      if (file.path) {</span>
-<span class="cstat-no" title="statement not covered" >        opts.map.inFile = file.relative;</span>
+<span class="cstat-no" title="statement not covered">      if (file.path) {</span>
+<span class="cstat-no" title="statement not covered">        opts.map.inFile = file.relative;</span>
       }
     }
 &nbsp;
     // Buffer input.
-<span class="cstat-no" title="statement not covered" >    if (file.isBuffer()) {</span>
-<span class="cstat-no" title="statement not covered" >      try {</span>
-<span class="cstat-no" title="statement not covered" >        file.contents = transform(file, file.contents, opts);</span>
+<span class="cstat-no" title="statement not covered">    if (file.isBuffer()) {</span>
+<span class="cstat-no" title="statement not covered">      try {</span>
+<span class="cstat-no" title="statement not covered">        file.contents = transform(file, file.contents, opts);</span>
       } catch (e) {
-<span class="cstat-no" title="statement not covered" >        this.emit("error", e);</span>
-<span class="cstat-no" title="statement not covered" >        return done();</span>
+<span class="cstat-no" title="statement not covered">        this.emit("error", e);</span>
+<span class="cstat-no" title="statement not covered">        return done();</span>
       }
     // Dealing with stream input.
     } else {
-<span class="cstat-no" title="statement not covered" >      file.contents = file.contents.pipe(new BufferStreams(<span class="fstat-no" title="function not covered" >function(err, buf, cb) {</span></span>
-<span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >return cb(new gutil.PluginError(PLUGIN_NAME, err));</span></span>
-<span class="cstat-no" title="statement not covered" >        try {</span>
-<span class="cstat-no" title="statement not covered" >          var transformed = transform(file, buf, opts)</span>
+<span class="cstat-no" title="statement not covered">      file.contents = file.contents.pipe(new BufferStreams(<span class="fstat-no" title="function not covered">function(err, buf, cb) {</span></span>
+<span class="cstat-no" title="statement not covered">        if (err) <span class="cstat-no" title="statement not covered">return cb(new gutil.PluginError(PLUGIN_NAME, err));</span></span>
+<span class="cstat-no" title="statement not covered">        try {</span>
+<span class="cstat-no" title="statement not covered">          var transformed = transform(file, buf, opts)</span>
         } catch (e) {
-<span class="cstat-no" title="statement not covered" >          return cb(e);</span>
+<span class="cstat-no" title="statement not covered">          return cb(e);</span>
         }
-<span class="cstat-no" title="statement not covered" >        cb(null, transformed);</span>
+<span class="cstat-no" title="statement not covered">        cb(null, transformed);</span>
       }));
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this.push(file);</span>
-<span class="cstat-no" title="statement not covered" >    done();</span>
+<span class="cstat-no" title="statement not covered">    this.push(file);</span>
+<span class="cstat-no" title="statement not covered">    done();</span>
   });
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 10:36:31 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:31:09 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
