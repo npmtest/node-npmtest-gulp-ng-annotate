@@ -1,4 +1,7 @@
-# test coverage for  [gulp-ng-annotate (v2.0.0)](https://github.com/Kagami/gulp-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-ng-annotate.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-ng-annotate)
+# npmtest-gulp-ng-annotate
+
+#### basic test coverage for  [gulp-ng-annotate (v2.0.0)](https://github.com/Kagami/gulp-ng-annotate)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-ng-annotate.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-ng-annotate) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-ng-annotate.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-ng-annotate)
+
 #### Add angularjs dependency injection annotations with ng-annotate
 
 [![NPM](https://nodei.co/npm/gulp-ng-annotate.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-ng-annotate)
